@@ -40,6 +40,9 @@ section {
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 3px 3px 9px 0px rgba(0, 0, 0, 0.479);
+
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
 }
 
 div#imagem {

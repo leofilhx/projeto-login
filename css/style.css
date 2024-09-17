@@ -33,14 +33,14 @@ section {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     background-color: white;
     width: 270px;
-    height: 500px;
+    height: 516px;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 3px 3px 9px 0px rgba(0, 0, 0, 0.479);
 
+    transform: translate(-50%, -50%);
     transition: width 0.3s, height 0.3s;
     transition-timing-function: ease;
 }
@@ -64,10 +64,29 @@ div#formulario {
 
 #formulario p {
     font-size: 0.8em;
+    margin-bottom: 15px;
 }
 
 form div.campo {
     margin: 3px 0px;
+}
+
+.campo span {
+    color: rgb(0, 0, 0);
+    font-size: 1.7em;
+}
+
+.campo input {
+    background-color: #d2b67370;
+    font-size: 0.89em;
+    border-radius: 5px;
+    height: 28px;
+    width: calc(100% - 35px);
+    transform: translateY(-8px);
+}
+
+.campo input:focus-within {
+    background-color: white;
 }
 
 form input[type=submit] {
@@ -80,7 +99,6 @@ form input[type=submit] {
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    margin-top: 15px;
 }
 
 form input[type=submit]:hover{
